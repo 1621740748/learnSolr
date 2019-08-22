@@ -34,7 +34,7 @@ public class CrawlerServiceImpl implements CrawlerService {
 		List<WebPageEntity> list = new ArrayList<>();
 		for(SolrDocument doc : response.getData()){
 			WebPageEntity entity = new WebPageEntity();
-			String content = (String)doc.getFieldValue("content");
+			//String content = doc.getFieldValues("content").toArray(new String[0])[0];
 			// 在此截取包含关键词的一段文本返回出去，而不返回全部文本，以便在页面显示搜索结果
 			EntityUtil.setFieldsFromDocumentForRichText(entity, doc);
 			list.add(entity);
