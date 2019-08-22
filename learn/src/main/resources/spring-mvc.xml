@@ -48,6 +48,6 @@
 	<!-- 配置solrServer服务，供数据访问层检索数据使用： -->
     <bean id="solrServer" class="org.apache.solr.client.solrj.impl.HttpSolrServer">
         <!-- 配置构造方法 -->
-        <constructor-arg value="http://localhost:8983/solr/collection1"/>
+        <constructor-arg value="http://localhost:9999/solr/cms"/>
     </bean>
 </beans>

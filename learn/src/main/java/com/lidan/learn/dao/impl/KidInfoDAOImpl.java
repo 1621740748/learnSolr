@@ -28,7 +28,7 @@ import com.lidan.learn.util.EntityUtil;
 @Repository
 public class KidInfoDAOImpl implements KidInfoDAO{
 
-	private SolrClient solrClient = new HttpSolrClient("http://localhost:8983/solr/solr_test");
+	private SolrClient solrClient = new HttpSolrClient("http://localhost:9999/solr/cms");
 	
 	@Override
 	public ResultModel search(SolrQuery solrQuery) throws NoSuchMethodException, SecurityException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {

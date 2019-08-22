@@ -19,7 +19,7 @@ import edu.uci.ics.crawler4j.robotstxt.RobotstxtServer;
 public class CrawlerTest {
 	@Test
 	public void test(){
-		String crawlStorageFolder = "E:\\crawl";  // 设置数据存放路径
+		String crawlStorageFolder = "/data/solr/crawl";  // 设置数据存放路径
 	    int numberOfCrawlers = 5;  
 	    CrawlConfig config = new CrawlConfig();  
 	    
